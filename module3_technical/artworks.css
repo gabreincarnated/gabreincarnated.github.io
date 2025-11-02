@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(243, 243, 243)
+}
+
+section:first-of-type {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(16, 33, 80);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px 100px;
+}
+
+section:first-of-type h1 a {
+    font-size: 48px;
+    margin-bottom: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+section:first-of-type p {
+    font-size: 18px;
+    margin-top: 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+section.three-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding: 20px 0px;
+    gap: 20px;
+    height: 73vh;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+
+
+section.three-columns .column1 {
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+    margin: 0px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+section.three-columns .navigations a{
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    line-height: 3;
+    font-weight: normal;
+    transition: color 0.3s, transform 0.2s;
+}
+
+section.three-columns .navigations a:hover {
+    color: #102150;
+    transform: scale(1.05);
+}
+
+section.three-columns .column2 {
+    border: 5px solid #102150;
+    border-radius: 10px;
+    flex: 4;
+    margin: 0px;
+    padding: 20px;
+    background-color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.aboutme-content {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    height: 100%;
+}
+
+.aboutme-content .collage {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutme-content .collage img {
+    width: 70%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    
+}
+
+.aboutme-text {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutme-text h1 {
+    font-size: 36px;
+    color: #102150;
+    margin-bottom: 50px;
+}
+
+.aboutme-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0px 100px;
+    background-color: rgb(16, 33, 80)
+}
+
+footer p {
+    color: white;
+    padding: 0px 0px 0px 20px;
+}
+
+section.three-columns .column2,
+section:first-of-type {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+}
+
+section.three-columns .column1,
+footer {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+section.three-columns .column1,
+section.three-columns .column2{
+    justify-content:flex-start;
+}
